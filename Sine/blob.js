@@ -1,0 +1,1 @@
+function radians(degrees){return (degrees * Math.PI/180)};deg = 0;setInterval(function(){h1 = document.getElementsByTagName('h1')[0];sinePos = Math.sin(radians(deg))*10;h1.style = `top: ${sinePos}px`;deg++;},1)

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>circl</title>
+        <style>
+            p {
+                color:white;
+            }
+            body,html {
+                overflow:auto !important;
+                background-color: #000000;
+                height:100%;
+                width:100%;
+                margin:0;
+            }
+
+           
+
+            .circle {
+                --diameter : 1px;
+                display:inline-flex;
+                position:absolute;
+                top:calc(var(--diameter) / 2 + var(--posY));
+                left:calc(var(--diameter) / 2 + var(--posX));
+                background-color:currentColor;
+                width:var(--diameter);
+                height:var(--diameter);
+                border-radius:100%;
+                
+            }
+        </style>
+        <script src="canvas.js" async defer></script>
+    </head>
+    <body>
+        <p style="margin-top:0">CANVAS??!!</p>
+        <input accept=".jpg, .png, .jpeg" type="file"  onchange="check()">
+        <br>
+        <canvas style="display:none"></canvas>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="circle"></div>
+    </body>
+</html>
